@@ -1,11 +1,13 @@
 package com.people23.academy.service;
 
 import java.util.List;
-
 import com.people23.academy.entity.Student;
 
-/*
+/**
+ * Interface service layer with operations to database for students
  * 
+ * @author 23 People Company
+ *
  */
 public interface IStudentService {
 
@@ -21,5 +23,4 @@ public interface IStudentService {
 	
 	public Student updateStudent(Student student);
 	
-
 }

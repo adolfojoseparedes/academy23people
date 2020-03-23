@@ -17,8 +17,12 @@ import javax.persistence.TemporalType;
 import com.sun.istack.NotNull;
 
 
-/*
+/**
+ * Entity that defines the database table for course through JPA 
+ * with their respective fields, restrictions and relationships
  * 
+ * @author 23 People Company
+ *
  */
 @Entity
 @Table(name="course")

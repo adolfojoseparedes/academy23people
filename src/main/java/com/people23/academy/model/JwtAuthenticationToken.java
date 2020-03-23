@@ -2,10 +2,16 @@ package com.people23.academy.model;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 
+/**
+ * Class model that defines the properties for token-based authentication JWT
+ * 
+ * @author 23 People Company
+ *
+ */
 public class JwtAuthenticationToken extends UsernamePasswordAuthenticationToken {
 
-
 	private static final long serialVersionUID = 1L;
+	
 	private String token;
 	
 	public JwtAuthenticationToken(String token) {

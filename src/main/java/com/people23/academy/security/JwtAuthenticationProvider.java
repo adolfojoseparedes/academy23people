@@ -13,6 +13,12 @@ import com.people23.academy.model.JwtAuthenticationToken;
 import com.people23.academy.model.JwtUser;
 import com.people23.academy.model.JwtUserDetails;
 
+/**
+ * Provider for authentication throughout JWT
+ * 
+ * @author 23 People Company
+ *
+ */
 @Component
 public class JwtAuthenticationProvider extends AbstractUserDetailsAuthenticationProvider {
 
@@ -24,6 +30,12 @@ public class JwtAuthenticationProvider extends AbstractUserDetailsAuthentication
 			UsernamePasswordAuthenticationToken authentication) throws AuthenticationException {
 	}
 
+	/**
+    * Method that initiates authentication JWT
+    * @param String user name
+    * @param UsernamePasswordAuthenticationToken authentication object with user name, token and password
+    * @return UserDetails user details information
+    */
 	@Override
 	protected UserDetails retrieveUser(String username, UsernamePasswordAuthenticationToken authentication)
 			throws AuthenticationException {
@@ -42,6 +54,11 @@ public class JwtAuthenticationProvider extends AbstractUserDetailsAuthentication
 		return new JwtUserDetails(jwtUser.getUserName(), jwtUser.getId(), token, grantedAuthorities);
 	}
 
+	/**
+    * Method that initiates authentication JWT
+    * @param Class<?> authentication
+    * @return boolean true or false
+    */
 	@Override
 	public boolean supports(Class<?> authentication) {
 		return (JwtAuthenticationToken.class.isAssignableFrom(authentication));

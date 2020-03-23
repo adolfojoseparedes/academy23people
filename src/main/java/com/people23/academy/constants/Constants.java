@@ -1,5 +1,11 @@
 package com.people23.academy.constants;
 
+/**
+ * Class for define constants of the application. Mainly for JWT token configuration
+ * 
+ * @author 23 People Company
+ *
+ */
 public class Constants {
 	
 	public final static String YOUR_SECRET =  "your_secret";

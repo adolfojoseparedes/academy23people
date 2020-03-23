@@ -18,6 +18,12 @@ import com.people23.academy.security.JwtAuthenticationTokenFilter;
 import com.people23.academy.security.JwtSuccessHandler;
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * Class JWT security configuration web
+ * 
+ * @author 23 People Company
+ *
+ */
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @EnableWebSecurity
 @Component
@@ -30,12 +36,20 @@ public class JwtSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private JwtAuthenticationEntryPoint entryPoint;
 	
+	/**
+    * Method of authentication manager
+    * @return AuthenticationManager Object class with singleton list provider
+    */
 	@Bean
 	public AuthenticationManager authenticationManager() {
 		log.info("component JwtSecurityConfig - calling authenticationManager method");
 		return new ProviderManager(Collections.singletonList(authenticationProvider));
 	}
 	
+	/**
+    * Method of authentication for filter token
+    * @return JwtAuthenticationTokenFilter Object class contain authentication manager and sucess handler
+    */
 	@Bean
 	public JwtAuthenticationTokenFilter authenticationTokenFilter() {
 		log.info("component JwtSecurityConfig - calling authenticationTokenFilter method");
@@ -45,6 +59,11 @@ public class JwtSecurityConfig extends WebSecurityConfigurerAdapter {
 		return filter;
 	}
 	
+	/**
+    * Method of configure HTTP properties for request token
+    * @param HttpSecurity It contain configuration web based security
+    * @return void not return value
+    */
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		log.info("component JwtSecurityConfig - calling configure method");

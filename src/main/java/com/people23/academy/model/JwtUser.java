@@ -1,5 +1,11 @@
 package com.people23.academy.model;
 
+/**
+ * Class model that defines the fields for token-based authentication JWT
+ * 
+ * @author 23 People Company
+ *
+ */
 public class JwtUser {
 	
 	private String userName;

@@ -13,7 +13,13 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import com.sun.istack.NotNull;
 
-
+/**
+ * Entity that defines the database table for student through JPA 
+ * with their respective fields, restrictions and relationships
+ * 
+ * @author 23 People Company
+ *
+ */
 @Entity
 @Table(name="student")
 public class Student implements Serializable{
@@ -33,7 +39,7 @@ public class Student implements Serializable{
 	@Column (name="last_name", length = 50)
 	private String lastName;
 	
-	@Min(18)
+	@Min(19)
 	@Column (name="age")
 	private int age;
 	

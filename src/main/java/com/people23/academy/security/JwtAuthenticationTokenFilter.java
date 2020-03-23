@@ -11,13 +11,27 @@ import org.springframework.security.web.authentication.AbstractAuthenticationPro
 import com.people23.academy.constants.Constants;
 import com.people23.academy.model.JwtAuthenticationToken;
 
-
+/**
+ * JWT authentication token filter class
+ * 
+ * @author 23 People Company
+ *
+ */
 public class JwtAuthenticationTokenFilter extends AbstractAuthenticationProcessingFilter {
 
+	/**
+	 * Constructor
+	 */
 	public JwtAuthenticationTokenFilter() {
 		super("/api/**");
 	}
 
+	/**
+    * Method that initiates authentication JWT
+    * @param HttpServletRequest request
+    * @param HttpServletResponse response
+    * @return Authentication object authentication
+    */
 	@Override
 	public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
 			throws AuthenticationException, IOException, ServletException {
@@ -29,18 +43,20 @@ public class JwtAuthenticationTokenFilter extends AbstractAuthenticationProcessi
 		}
 		String authenticationToken = header.substring(7);
 		JwtAuthenticationToken token = new JwtAuthenticationToken(authenticationToken);
-	
-
 		return getAuthenticationManager().authenticate(token);
 	}
 
+	/**
+    * Method for successful authentication
+    * @param HttpServletRequest request
+    * @param HttpServletResponse response
+    * @param FilterChain chain
+    * @return void not return value
+    */
 	@Override
 	protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain,
 			Authentication authResult) throws IOException, ServletException {
 		super.successfulAuthentication(request, response, chain, authResult);
 		chain.doFilter(request, response);
 	}
-	
-	
-
 }

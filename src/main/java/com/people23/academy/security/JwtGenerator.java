@@ -8,9 +8,21 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * Generator JWT token
+ * 
+ * @author 23 People Company
+ *
+ */
 @Component
 @Log4j2
 public class JwtGenerator {
+	
+	/**
+    * Method that generate alphanumeric value for token
+    * @param JwtUser object JWT user
+    * @return UserDetails user details information
+    */
 	public String generate(JwtUser jwtUser) {
 		log.info("component JwtGenerator - calling generate method");
 		Claims claims = Jwts.claims()

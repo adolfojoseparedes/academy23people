@@ -6,38 +6,25 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 
 /**
- * Error Request for wrong fields
+ * Model class for handling bad request exception
  * 
- * @see Academy 23 People
- * @author 23 People
+ * @author 23 People Company
  *
  */
 @ResponseStatus(code = HttpStatus.BAD_REQUEST)
 public class BadRequestException extends RuntimeException {
 
-    /**
-     * Serial.
-     */
     private static final long serialVersionUID = 1L;
 
-    /**
-     * Solution.
-     */
     private final String solution;
 
-    /**
-     * Code.
-     */
     private final String code;
 
-    /**
-     * error time
-     */
     private final Date time = new Date();
 
     /**
-     * Empty Constructor.
-     */
+    * Constructor
+    */
     public BadRequestException() {
         super();
         code = "";
@@ -45,12 +32,11 @@ public class BadRequestException extends RuntimeException {
     }
 
     /**
-     * Constructor.
-     * 
-     * @param message message.
-     * @param solution solution.
-     * @param code code.
-     */
+	* Constructor
+	* @param String message
+	* @param String solution
+	* @param String code
+	*/
     public BadRequestException(String message, String solution, String code) {
         super(message);
         this.solution = solution;

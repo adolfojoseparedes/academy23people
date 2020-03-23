@@ -14,7 +14,12 @@ import com.people23.academy.model.Login;
 import com.people23.academy.security.JwtGenerator;
 import lombok.extern.log4j.Log4j2;
 
-
+/**
+ * Class controller of MVC model for the API management JWT token
+ * 
+ * @author 23 People Company
+ *
+ */
 @RestController
 @RequestMapping("/token")
 @Log4j2
@@ -31,11 +36,19 @@ public class TokenController {
 	@Autowired
 	private Login login;
 	
+	/**
+    * Constructor TokenController class controller
+    * @param JwtGenerator JwtGenerator object
+    */
 	public TokenController(JwtGenerator jwtGenerator) {
 		log.info("controller TokenController - constructor");
 		this.jwtGenerator = jwtGenerator;
 	}
 	
+	/**
+    * Method exposed by the API to generate token
+    * @return ResponseEntity<?> response entity that contain JWT token and a HTTP default message
+    */
 	@PostMapping
 	public ResponseEntity<?> generate() {
 		log.info("controller TokenController - calling generate method");
@@ -51,6 +64,11 @@ public class TokenController {
 		}
 	}
 
+	/**
+    * Method for validate login with data storage for authentication
+    * @param Login entity that contain user and password
+    * @return JwtUser entity model with user data for authentication
+    */
 	private JwtUser existUser(Login login) {
 		log.info("controller TokenController - calling existUser method");
 		if(login.getUser().equals(validUser) && login.getPassword().equals(validPassword)) {

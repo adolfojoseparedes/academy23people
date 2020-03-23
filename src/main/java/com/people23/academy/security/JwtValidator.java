@@ -7,10 +7,21 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * Generator JWT validator
+ * 
+ * @author 23 People Company
+ *
+ */
 @Component
 @Log4j2
 public class JwtValidator {
 
+	/**
+    * Method for validate token versus secret constant, user id constant and user role
+    * @param String JWT alphanumeric token
+    * @return JwtUser object JWT user
+    */
 	public JwtUser validate(String token) {
 		log.info("component JwtValidator - calling validate method");
 		JwtUser jwtUser = null;
