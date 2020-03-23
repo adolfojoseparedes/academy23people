@@ -1,6 +1,5 @@
 package com.people23.academy.utils;
 
-
 import org.springframework.stereotype.Component;
 import com.people23.academy.utils.exception.BadRequestException;
 import lombok.extern.log4j.Log4j2;
