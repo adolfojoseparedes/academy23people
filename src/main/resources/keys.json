@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "api-rest-academy",
+  "private_key_id": "3f120c749394bd6c017b878ab897e9acf8ba0364",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCcYL6ZiA/ko0o6\n48UQIG1FmFzTiORauCVRTRxuCXwpVk6TYiyCaDWT3/yxPnC8pTOOVbw9WXhz68u4\nHpRXlJecUD+UxrMOPdEqz6JL+75MuZ2LAhJh7DNCDYJDATDYyYbzzmh/4qSFBf7b\nsdT7895lMB15q3SootNQ/lD1SUke4M/yIiT1XOZew9QxiCLVG8ngOR1WnPr2uDvM\nAOUarIuJHBYpQxh+0Kg5rEI+j7afeb9oMZtlvRe4DTeXFWFJQdmiNh44GRWpK7sE\nj6WSXi2GWszDTogVy7BQjwcyLVUVBseWi3V21HtMz9H+OIVYSl4rqnQn5XT1NrQW\n5iNAjfsHAgMBAAECggEAALTPJ5JdwAKcyzdMJI6A79eIU8xCe8ZpJLzcbALO9MDX\nCgNfgBdIZqqUUZiembuFSBdLClvlF2DxQpugv+SD6sjSALIFDQNqdm8JpJ42ddJA\ny+fufVK7yIiXFgZjWhdO7Lr57dnwNEmapRNgiuLHFl3pRCtqE3joy2zaoMD7+4+2\nkaH4QKT+WoCo7kZZGW0YaO0eYcM+tkTU6OynejBUEq7K+aWM8Ky8KYZLnCZq2i62\nABe+WFuD5IA3et6mE4yQSapuanjlv49iITPt792mOVdE3SD1ScwItyaz6pw5TgUV\n/dpIulSDU+aEm9rUFkX8U448fKicTNenAhZaZqzjAQKBgQDQmcYxB6pfZIldkIiJ\ntgwjBvxYJiC1Dq3fGCx/ExYbs819tmEtTmVpgPlgADK8/R76aBmQE15aFyXA7ZHh\nLbhCCGc1XhYHcu+3dH+Iy5ECUlTAlo0Rw2xnEqOvOpoFiBpFfhZ7HToEByREDvgb\n+JHZz0HACTTnmlAqToiKgQYe1wKBgQC/6TDPEqx5k0xAMuth9xvm1HS4UaxLhBxe\npKOeYbOdqVCe/M5iWHvRhiQQj6MG9AeVmkLoo8nEiJfpnUtUsXhvnmAi4YZTAV0l\npn+PHaVOq9A/uQSPnVYxuvaHQ4/svr+GeRVXOWUj4zV+C2n5t9/IN5kZZmOdZVHp\nJJf8LtlvUQKBgAJxyuDINjbn9rQh/XefqoS+kDZ4O+njQiZbIipbDudENCRE/t6J\nDKcv27xERFPyo2pLzgDiOTjVDJw2LH93CbG8Z3k4oQl1T1nXA6eWuxxL2rJnEUAk\nCiErFr/279cgwS4PTDQlI4jojIQ/qKirQQpMY3jcosIUDNxyDyeQW4IBAoGACf6F\n6TLKwqYWIX3FXlu1G0dTMMooE+K0a4VddAEYjoxjw3Pc96guApJezHH+hn0s6/CV\nrXHiLxcB+kuTwbxgTkfML+TYzvfSNwS9veFIW5l9BeSHxUbnVz2qWw78rtKcPM+P\nefRmPQE3JvJHOZcG03F5yqXXaDn/kwmx1JNIBZECgYAFHST0l32Y+psrSdqtdG7q\npeTM4JhjJOAWUFxfDvOyi8wynGidrK/bsJmpB/EMZDJyO1xTUIfOqQwqMosLBYaU\n4jpQYYBD3/njXvdqzbvu+ytXKIYT45WJEoINdaCe+DeMpMrqmCU50nZMeZFiOd3A\nwpUkK544PebbO37V2b2WDQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "api-rest-academy@appspot.gserviceaccount.com",
+  "client_id": "101904906793102991541",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/api-rest-academy%40appspot.gserviceaccount.com"
+}
