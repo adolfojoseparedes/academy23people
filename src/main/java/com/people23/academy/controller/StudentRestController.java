@@ -48,7 +48,7 @@ public class StudentRestController {
 	@GetMapping("/students")
 	@ResponseStatus(HttpStatus.OK)
 	public List<Student> getStudent() {
-		log.info("controller CourseRestController - calling getStudent method");
+		log.info("controller StudentRestController - calling getStudents method");
 		return studentService.findAll();
 	}
 	
@@ -58,8 +58,8 @@ public class StudentRestController {
     * @return ResponseEntity<?> response entity of the student and a HTTP default message
     */
 	@GetMapping("/students/{rut}")
-	public ResponseEntity<?> findCourse(@PathVariable(value="rut")String rut) {
-		log.info("controller CourseRestController - calling findCourse method");
+	public ResponseEntity<?> findStudent(@PathVariable(value="rut")String rut) {
+		log.info("controller StudentRestController - calling findStudent method");
 		Student studentDb = studentService.findByRut(rut);
 		if (studentDb!=null) {
 			return new ResponseEntity<>(studentDb, HttpStatus.OK);
@@ -75,7 +75,7 @@ public class StudentRestController {
     */
 	@PostMapping("/students")
 	public ResponseEntity<?>addStudent(@RequestBody Student student) {
-		log.info("controller CourseRestController - calling addStudent method");
+		log.info("controller StudentRestController - calling addStudent method");
 		if (studentService.findStudent(student) == null) {
 			baseValidations.validateObjectRut(student.getRut(),"Rut");
 			baseValidations.validateObjectAge(student.getAge(),"Age");
@@ -98,7 +98,7 @@ public class StudentRestController {
     */
 	@PutMapping("/students/{rut}")
 	public ResponseEntity<?> updateStudent(@PathVariable(value="rut")String rut, @RequestBody Student student) {
-		log.info("controller CourseRestController - calling updateStudent method");
+		log.info("controller StudentRestController - calling updateStudent method");
 		Student studentDb = null;
 		baseValidations.validateObjectRut(rut,"Rut");
 		studentDb = studentService.findByRut(rut);
@@ -122,8 +122,8 @@ public class StudentRestController {
     * @return ResponseEntity<Void> response entity that contain a HTTP default message
     */
 	@DeleteMapping("/students/{rut}")
-	public ResponseEntity<Void> deleteCourse(@PathVariable(value="rut")String rut) {
-		log.info("controller CourseRestController - calling deleteCourse method");
+	public ResponseEntity<Void> deleteStudent(@PathVariable(value="rut")String rut) {
+		log.info("controller StudentRestController - calling deleteStudent method");
 		studentService.deleteStudent(rut);
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}
