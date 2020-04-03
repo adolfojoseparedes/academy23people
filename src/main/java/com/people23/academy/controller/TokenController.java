@@ -38,7 +38,7 @@ public class TokenController {
 	
 	/**
     * Constructor TokenController class controller
-    * @param JwtGenerator JwtGenerator object
+    * @param jwtGenerator JwtGenerator object
     */
 	public TokenController(JwtGenerator jwtGenerator) {
 		log.info("controller TokenController - constructor");
@@ -66,7 +66,7 @@ public class TokenController {
 
 	/**
     * Method for validate login with data storage for authentication
-    * @param Login entity that contain user and password
+    * @param login entity that contain user and password
     * @return JwtUser entity model with user data for authentication
     */
 	private JwtUser existUser(Login login) {

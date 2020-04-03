@@ -33,9 +33,9 @@ public class BadRequestException extends RuntimeException {
 
     /**
 	* Constructor
-	* @param String message
-	* @param String solution
-	* @param String code
+	* @param message message string
+	* @param solution solution string
+	* @param code code string
 	*/
     public BadRequestException(String message, String solution, String code) {
         super(message);

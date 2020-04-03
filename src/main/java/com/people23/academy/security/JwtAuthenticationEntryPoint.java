@@ -21,8 +21,8 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
 	/**
     * Method that initiates authentication JWT
-    * @param HttpServletRequest request
-    * @param HttpServletResponse response
+    * @param request HttpServletRequest request
+    * @param response HttpServletResponse response
     * @return void not return value
     */
 	@Override

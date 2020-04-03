@@ -44,7 +44,7 @@ public class CourseRestController {
 	
 	/**
     * Method exposed by the API to get a course for code. It communicates with the service layer
-    * @param String @PathVariable course code
+    * @param code @PathVariable code course
     * @return ResponseEntity<?> response entity of the course and a HTTP default message
     */
 	@GetMapping("/courses/{code}")
@@ -60,7 +60,7 @@ public class CourseRestController {
 	
 	/**
     * Method exposed by the API to save a course. It communicates with the service layer
-    * @param Course @RequestBody entity Course
+    * @param course @RequestBody entity Course
     * @return ResponseEntity<Void> response entity that contain a HTTP default message
     */
 	@PostMapping("/courses")
@@ -76,8 +76,8 @@ public class CourseRestController {
 	
 	/**
     * Method exposed by the API to update a course. It communicates with the service layer
-    * @param String @PathVariable code of course
-    * @param Course @RequestBody entity course
+    * @param code @PathVariable code of course
+    * @param course @RequestBody entity course
     * @return ResponseEntity<?> response entity that contain a HTTP default message
     */
 	@PutMapping("/courses/{code}")
@@ -96,7 +96,7 @@ public class CourseRestController {
 	
 	/**
     * Method exposed by the API to delete a course. It communicates with the service layer
-    * @param String @PathVariable code of course
+    * @param code @PathVariable code of course
     * @return ResponseEntity<Void> response entity that contain a HTTP default message
     */
 	@DeleteMapping("/courses/{code}")

@@ -32,8 +32,8 @@ public class JwtAuthenticationProvider extends AbstractUserDetailsAuthentication
 
 	/**
     * Method that initiates authentication JWT
-    * @param String user name
-    * @param UsernamePasswordAuthenticationToken authentication object with user name, token and password
+    * @param username user name
+    * @param authentication authentication object with user name, token and password
     * @return UserDetails user details information
     */
 	@Override
@@ -56,7 +56,7 @@ public class JwtAuthenticationProvider extends AbstractUserDetailsAuthentication
 
 	/**
     * Method that initiates authentication JWT
-    * @param Class<?> authentication
+    * @param authentication Class<?> authentication
     * @return boolean true or false
     */
 	@Override

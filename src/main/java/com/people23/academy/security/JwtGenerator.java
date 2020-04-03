@@ -20,7 +20,7 @@ public class JwtGenerator {
 	
 	/**
     * Method that generate alphanumeric value for token
-    * @param JwtUser object JWT user
+    * @param jwtUser object JWT user
     * @return UserDetails user details information
     */
 	public String generate(JwtUser jwtUser) {

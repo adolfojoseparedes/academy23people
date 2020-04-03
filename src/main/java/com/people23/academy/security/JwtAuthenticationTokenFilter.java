@@ -28,8 +28,8 @@ public class JwtAuthenticationTokenFilter extends AbstractAuthenticationProcessi
 
 	/**
     * Method that initiates authentication JWT
-    * @param HttpServletRequest request
-    * @param HttpServletResponse response
+    * @param request HttpServletRequest request
+    * @param response HttpServletResponse response
     * @return Authentication object authentication
     */
 	@Override
@@ -48,9 +48,9 @@ public class JwtAuthenticationTokenFilter extends AbstractAuthenticationProcessi
 
 	/**
     * Method for successful authentication
-    * @param HttpServletRequest request
-    * @param HttpServletResponse response
-    * @param FilterChain chain
+    * @param request HttpServletRequest request
+    * @param response HttpServletResponse response
+    * @param chain FilterChain chain
     * @return void not return value
     */
 	@Override
