@@ -61,7 +61,7 @@ public class JwtSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	/**
     * Method of configure HTTP properties for request token
-    * @param HttpSecurity It contain configuration web based security
+    * @param http It contain configuration web based security
     * @return void not return value
     */
 	@Override

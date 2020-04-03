@@ -16,8 +16,8 @@ public class BaseValidations implements IBaseValidations {
 	
 	/**
     * Method for validate object type rut and set bad request exception
-    * @param String student rut
-    * @param String description for validated field
+    * @param rut student rut
+    * @param field description for validated field
     * @return void not return value
     */
 	public void validateObjectRut(String rut, String field) {
@@ -30,8 +30,8 @@ public class BaseValidations implements IBaseValidations {
 	
 	/**
     * Method for validate object type rut and set bad request exception
-    * @param int age
-    * @param String description for validated field
+    * @param age integer age
+    * @param field description for validated field
     * @return void not return value
     */
 	public void validateObjectAge(int age, String field) {
@@ -44,7 +44,7 @@ public class BaseValidations implements IBaseValidations {
 	
 	/**
     * Method for validate only object type rut
-    * @param String student rut
+    * @param rut student rut
     * @return boolean true or false of the validation rut
     */
 	private boolean validateRut(String rut) {
