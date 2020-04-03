@@ -54,7 +54,7 @@ public class StudentRestController {
 	
 	/**
     * Method exposed by the API to get a student for rut. It communicates with the service layer
-    * @param String @PathVariable student rut
+    * @param rut @PathVariable student rut
     * @return ResponseEntity<?> response entity of the student and a HTTP default message
     */
 	@GetMapping("/students/{rut}")
@@ -70,7 +70,7 @@ public class StudentRestController {
 	
 	/**
     * Method exposed by the API to save a student. It communicates with the service layer
-    * @param Student @RequestBody entity Student
+    * @param student @RequestBody entity Student
     * @return ResponseEntity<Void> response entity that contain a HTTP default message
     */
 	@PostMapping("/students")
@@ -92,8 +92,8 @@ public class StudentRestController {
 	
 	/**
     * Method exposed by the API to update a student. It communicates with the service layer
-    * @param String @PathVariable student rut
-    * @param Student @RequestBody entity student
+    * @param rut @PathVariable student rut
+    * @param student @RequestBody entity Student
     * @return ResponseEntity<?> response entity that contain a HTTP default message
     */
 	@PutMapping("/students/{rut}")
@@ -118,7 +118,7 @@ public class StudentRestController {
 	
 	/**
     * Method exposed by the API to delete a student. It communicates with the service layer
-    * @param String @PathVariable student rut
+    * @param rut @PathVariable student rut
     * @return ResponseEntity<Void> response entity that contain a HTTP default message
     */
 	@DeleteMapping("/students/{rut}")

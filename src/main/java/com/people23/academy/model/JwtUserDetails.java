@@ -26,10 +26,10 @@ public class JwtUserDetails implements UserDetails {
 	
 	/**
     * Constructor of the JwtUserDetails class 
-    * @param String user name for generate token
-    * @param String id for generate token
-    * @param String token generated
-    * @param List<GrantedAuthority> authorities list
+    * @param userName user name for generate token
+    * @param id id for generate token
+    * @param token token generated
+    * @param authorities authorities list
     */
 	public JwtUserDetails(String userName, Long id, String token, List<GrantedAuthority> authorities) {
 		super();

@@ -19,7 +19,7 @@ public class JwtValidator {
 
 	/**
     * Method for validate token versus secret constant, user id constant and user role
-    * @param String JWT alphanumeric token
+    * @param token JWT alphanumeric token
     * @return JwtUser object JWT user
     */
 	public JwtUser validate(String token) {

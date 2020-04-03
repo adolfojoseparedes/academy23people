@@ -35,7 +35,7 @@ public class StudentServiceImpl implements IStudentService {
 	
 	/**
     * Method intermediate for interaction between API controller find student and its DAO
-    * @param Student entity student
+    * @param student Student entity
     * @return Student entity with the student searched
     */
 	@Override
@@ -47,7 +47,7 @@ public class StudentServiceImpl implements IStudentService {
 	
 	/**
     * Method intermediate for interaction between API controller find student by rut and its DAO
-    * @param String rut of student
+    * @param rut rut of student
     * @return Student entity with the student searched
     */
 	@Override
@@ -59,7 +59,7 @@ public class StudentServiceImpl implements IStudentService {
 	
 	/**
     * Method intermediate for interaction between API controller save student and its DAO
-    * @param Student student entity
+    * @param student Student entity
     * @return void not return value
     */
 	@Override
@@ -71,7 +71,7 @@ public class StudentServiceImpl implements IStudentService {
 
 	/**
     * Method intermediate for interaction between API controller delete student and its DAO
-    * @param String rut student
+    * @param rut student rut
     * @return void not return value
     */
 	@Override
@@ -84,7 +84,7 @@ public class StudentServiceImpl implements IStudentService {
 
 	/**
     * Method intermediate for interaction between API controller update student and its DAO
-    * @param Student object student
+    * @param student Student object
     * @return void not return value
     */
 	@Override

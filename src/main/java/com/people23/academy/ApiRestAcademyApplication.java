@@ -14,7 +14,7 @@ public class ApiRestAcademyApplication {
 
 	/**
     * Method main java project
-    * @param String[] args application java
+    * @param args String[] args application java
     * @return void not return value
     */
 	public static void main(String[] args) {

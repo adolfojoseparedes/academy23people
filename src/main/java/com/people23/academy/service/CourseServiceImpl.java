@@ -34,7 +34,7 @@ public class CourseServiceImpl implements ICourseService {
 
 	/**
     * Method intermediate for interaction between API controller find course and its DAO
-    * @param Course entity course
+    * @param course Course entity
     * @return Course entity with the course searched
     */
 	@Override
@@ -46,7 +46,7 @@ public class CourseServiceImpl implements ICourseService {
 	
 	/**
     * Method intermediate for interaction between API controller find course by code and its DAO
-    * @param String course code
+    * @param code course code
     * @return Course entity with the course searched by code
     */
 	@Override
@@ -58,7 +58,7 @@ public class CourseServiceImpl implements ICourseService {
 	
 	/**
     * Method intermediate for interaction between API controller save course and its DAO
-    * @param Course course entity
+    * @param course Course entity
     * @return void not return value
     */
 	@Override
@@ -70,7 +70,7 @@ public class CourseServiceImpl implements ICourseService {
 
 	/**
     * Method intermediate for interaction between API controller delete course and its DAO
-    * @param String course code
+    * @param code course code
     * @return void not return value
     */
 	@Override
@@ -82,7 +82,7 @@ public class CourseServiceImpl implements ICourseService {
 	
 	/**
     * Method intermediate for interaction between API controller update course and its DAO
-    * @param String object course
+    * @param course Course object
     * @return void not return value
     */
 	@Override
