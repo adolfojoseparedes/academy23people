@@ -1,6 +1,6 @@
 # academy23people
 The Academy23People API Rest allows you to maintain a list of courses and students using spring according to the following definition:<br/>
-course:<br/>
+▹ course:<br/>
 ■ name<br/>
 ■ code (max 4 chars)<br/>
 <br/>
