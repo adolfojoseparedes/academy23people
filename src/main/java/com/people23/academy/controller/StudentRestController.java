@@ -124,7 +124,10 @@ public class StudentRestController {
 	@DeleteMapping("/students/{rut}")
 	public ResponseEntity<Void> deleteStudent(@PathVariable(value="rut")String rut) {
 		log.info("controller StudentRestController - calling deleteStudent method");
-		studentService.deleteStudent(rut);
-		return new ResponseEntity<Void>(HttpStatus.OK);
+		if (studentService.findByRut(rut)!=null) {
+			studentService.deleteStudent(rut);
+			return new ResponseEntity<Void>(HttpStatus.OK);
+		}
+		return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
 	}
 }
