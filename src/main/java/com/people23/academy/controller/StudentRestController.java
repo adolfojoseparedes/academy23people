@@ -108,7 +108,7 @@ public class StudentRestController {
 			studentDb.setName(student.getName());
 			studentDb.setLastName(student.getLastName());
 			studentDb.setAge(student.getAge());
-			student.setCodeCourse(student.getCodeCourse());
+			studentDb.setCodeCourse(student.getCodeCourse());
 			studentService.updateStudent(studentDb);
 			return new ResponseEntity<>(studentDb, HttpStatus.OK);
 		} else {
